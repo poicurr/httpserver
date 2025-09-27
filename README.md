@@ -83,6 +83,13 @@ Read headers and body from `httpserver::HttpRequest`, then return an `httpserver
 - `examples/echo_server`: echoes the request body for debugging
 - `examples/keep_alive_demo`: showcases keep-alive behavior
 
+## TODO
+
+- [ ] Provide an optional connection model so users can switch between a thread pool and non-blocking I/O.
+- [ ] Add a lightweight router API that registers handlers by URI and HTTP method.
+- [ ] Unify socket/exception logging and allow pluggable log sinks.
+- [ ] Implement additional HTTP features (e.g., chunked transfer, header utilities such as cookie helpers) and document the supported scope.
+
 ## License
 
 MIT License
