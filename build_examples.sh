@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+
+PROJECT_ROOT_DIR=$(pwd)
+BUILD_DIR="$PROJECT_ROOT_DIR/build"
+
+cmake -S "$PROJECT_ROOT_DIR" -B "$BUILD_DIR" -DHTTP_SERVER_BUILD_EXAMPLES=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+cmake --build "$BUILD_DIR" --config Release
+

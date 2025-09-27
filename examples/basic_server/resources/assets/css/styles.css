@@ -1,0 +1,15 @@
+/* Minimal styles for HTTP test */
+:root { --bg:#0f0f12; --fg:#e6e6e9; --accent:#7aa2f7; --muted:#a0a0ab; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, Arial, sans-serif; }
+header { padding:16px; border-bottom:1px solid #222; display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+header .logo { width:32px; height:32px; }
+nav a { color:var(--fg); margin-right:12px; text-decoration:none; border-bottom:1px dotted var(--muted); }
+nav a:hover { color:var(--accent); }
+main { max-width:960px; margin:0 auto; padding:24px 16px; }
+section { margin:24px 0; padding:16px; border:1px solid #222; border-radius:12px; background:#131318; }
+button { padding:8px 12px; border-radius:8px; border:1px solid #333; background:#1a1a22; color:var(--fg); cursor:pointer; }
+button:hover { border-color:var(--accent); }
+pre { background:#0c0c0f; padding:12px; border-radius:8px; overflow:auto; }
+footer { border-top:1px solid #222; padding:16px; color:var(--muted); text-align:center; }
+main.center { display:grid; place-items:center; min-height:60vh; }

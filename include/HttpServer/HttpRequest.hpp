@@ -1,9 +1,9 @@
 #pragma once
 
-#include <common/StringUtils.hpp>
 #include <map>
 #include <string>
-#include <vector>
+
+namespace httpserver {
 
 struct HttpRequestHeader {
   std::string method;
@@ -16,3 +16,5 @@ struct HttpRequest {
   HttpRequestHeader header;
   std::string body;
 };
+
+} // namespace httpserver
